@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEM HTML WALLET</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <h1>ホーム</h1>
+    <h2>ノード</h2>
+    <div>
+        <span id="nodeUrl"></span>
+        <button onclick="refreshNode()">ノード更新</button>
+    </div>
+    <h2>アドレス</h2>
+    <div>
+        <input type="text" id="address" value="NCJZ2B4GU3XHL4PQ63CPOASKEDSHYQ7MZ5FTLAA2">
+        <button onclick="showAllBalance()">残高更新</button>
+    </div>
+    <h2>残高</h2>
+    <div>
+        <table>
+            <tr>
+                <th>数量</th>
+                <th>単位</th>
+            </tr>
+            <tr>
+                <td><span id="balance">0</span></td>
+                <td><span>XEM</span></td>
+            </tr>
+        </table>
+    </div>
+    <h2>トークン</h2>
+    <div>
+        <table id="tokenList">
+            <tr>
+                <th>数量</th>
+                <th>単位</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
